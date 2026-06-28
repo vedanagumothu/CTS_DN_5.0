@@ -1,3 +1,5 @@
+package Week-1.Design principles and patterns.Factorymethodpattern;
+
 public class FactoryTest {
 
     public static void main(String[] args) {
