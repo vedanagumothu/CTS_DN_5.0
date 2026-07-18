@@ -1,0 +1,31 @@
+.container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 40px;
+}
+
+.column {
+  width: 30%;
+  padding: 20px;
+  border-right: 4px solid green;
+}
+
+.column:last-child {
+  border-right: none;
+}
+
+h1 {
+  font-size: 38px;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+h3 {
+  font-size: 22px;
+}
+
+h4 {
+  font-size: 18px;
+}
