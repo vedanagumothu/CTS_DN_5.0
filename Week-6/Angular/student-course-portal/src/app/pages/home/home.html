@@ -1,0 +1,24 @@
+<h1>{{ portalName }}</h1>
+
+<p>
+  This application helps students browse courses and manage their profiles.
+</p>
+
+<p>Available Courses: {{ courseCount }}</p>
+
+<button
+    [disabled]="!isPortalActive"
+    (click)="onEnrollClick()">
+    Enroll Now
+</button>
+
+<p>{{ message }}</p>
+
+<hr>
+
+<input
+type="text"
+placeholder="Search Course"
+[(ngModel)]="searchTerm">
+
+<p>Searching for: {{ searchTerm }}</p>

@@ -1,0 +1,19 @@
+<h2>Course List</h2>
+
+<table border="1" cellpadding="8">
+  <tr>
+    <th>ID</th>
+    <th>Course</th>
+    <th>Instructor</th>
+    <th>Duration</th>
+  </tr>
+
+  <tr *ngFor="let course of courses"
+    (click)="goToCourse(course.id)"
+    style="cursor:pointer">
+    <td>{{ course.id }}</td>
+    <td>{{ course.name }}</td>
+    <td>{{ course.instructor }}</td>
+    <td>{{ course.duration }}</td>
+  </tr>
+</table>
